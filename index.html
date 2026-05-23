@@ -206,34 +206,7 @@
         color: #7b001c;
       }
 
-      /* conference list */
-      ul.conflist {
-        list-style: none;
-        padding-left: 0;
-      }
-      ul.conflist li {
-        margin-bottom: 0.7rem;
-        padding-left: 1.4rem;
-        position: relative;
-      }
-      ul.conflist li::before {
-        content: "•";
-        color: #7b001c;
-        position: absolute;
-        left: 0;
-        font-weight: bold;
-      }
-
-      /* Conference links: always look like plain text */
-      .conflist a {
-        color: inherit;
-        text-decoration: none;
-      }
-      .conflist a:hover {
-        text-decoration: none;
-      }
-
-      /* ---------- TEACHING LIST (compact) ---------- */
+      /* ---------- TEACHING & CONFERENCE LIST (compact) ---------- */
       .teaching-list {
         padding-left: 0;
         margin-top: 0.2rem;
@@ -271,26 +244,20 @@
 
       /* ---------- RESPONSIVE (mobile) ---------- */
       @media (max-width: 700px) {
-        /* Hide the entire sticky header */
         header {
           display: none;
         }
-
-        /* Centre the top section */
         .top-section {
           flex-direction: column;
           align-items: center;
           text-align: center;
         }
-
         .text-column {
           min-width: 0;
         }
-
         .text-column h1 {
           font-size: 2.2rem;
         }
-
         .photo-placeholder {
           width: 240px;
           height: 240px;
@@ -628,126 +595,158 @@
         </div>
       </section>
 
-      <!-- Conferences, Seminars & Workshops -->
+      <!-- Conferences, Seminars & Workshops (now matching Teaching style) -->
       <section id="conferences">
         <h2>Conferences, Seminars &amp; Workshops</h2>
 
         <h3>Onsite Participation</h3>
-        <ul class="conflist">
-          <li>
-            <a
-              href="https://sites.google.com/view/fmcs-ottawa"
-              class="hidden-link"
-              ><strong
-                >32<sup>nd</sup> Foundational Methods in Computer Science
-                Workshop</strong
-              ></a
-            >
-            – University of Ottawa, Canada (17–20 June 2025)
-          </li>
-          <li>
-            <a href="https://cmssmc.wixsite.com/summer25" class="hidden-link"
-              ><strong>2025 CMS Summer Meeting</strong></a
-            >
-            – Université Laval, Québec City, Canada (6–9 June 2025)
-          </li>
-          <li>
-            <a
-              href="https://sites.google.com/view/vn2024-algebraic-topology/home"
-              class="hidden-link"
-              ><strong>Algebraic Topology and Related Fields</strong></a
-            >
-            – HUS, Vietnam National University, Hanoi, Vietnam (29 July–2 August
-            2024)
-          </li>
-          <li>
-            <a
-              href="https://sfb-higher-invariants.app.uni-regensburg.de/index.php?title=Page_Interactions_between_algebra_equivariance_and_homotopy_theory_Summer_School"
-              class="hidden-link"
-              ><strong
-                >Interactions between Algebra, Equivariance, and Homotopy
-                Theory</strong
-              ></a
-            >
-            – Universität Regensburg (24–28 June 2024)
-          </li>
-          <li>
-            <a
-              href="https://sfb-higher-invariants.app.uni-regensburg.de/index.php?title=Bavarian_Geometry_and_Topology_Meeting_XII"
-              class="hidden-link"
-              ><strong>12th Bavarian Geometry &amp; Topology Meeting</strong></a
-            >
-            – Universität Regensburg, Germany (8–9 April 2024)
-          </li>
-          <li>
-            <a href="https://itp-school-2023.github.io/" class="hidden-link"
-              ><strong
-                >Interactions of Proof Assistants and Mathematics</strong
-              ></a
-            >
-            – Universität Regensburg, Germany (18–29 September 2023)
-          </li>
-          <li>
-            <a
-              href="https://www.math.ku.dk/english/calendar/events/parametrized-homotopy-theory/"
-              class="hidden-link"
-              ><strong>Parametrized Homotopy Theory</strong></a
-            >
-            – Københavns Universitet, Denmark (4–8 September 2023)
-          </li>
-          <li>
-            <a
-              href="https://archiveweb.epfl.ch/ytm2023.epfl.ch/"
-              class="hidden-link"
-              ><strong>Young Topologists Meeting</strong></a
-            >
-            – EPFL, Switzerland (24–28 July 2023)
-          </li>
-        </ul>
+        <div class="entry">
+          <div class="entry-description">
+            <ul class="teaching-list">
+              <li>
+                <a
+                  href="https://sites.google.com/view/fmcs-ottawa"
+                  class="hidden-link"
+                  >32<sup>nd</sup> Foundational Methods in Computer Science
+                  Workshop</a
+                >
+                <span class="course-date"
+                  >· University of Ottawa, Canada (17–20 June 2025)</span
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cmssmc.wixsite.com/summer25"
+                  class="hidden-link"
+                  >2025 CMS Summer Meeting</a
+                >
+                <span class="course-date"
+                  >· Université Laval, Québec City, Canada (6–9 June 2025)</span
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sites.google.com/view/vn2024-algebraic-topology/home"
+                  class="hidden-link"
+                  >Algebraic Topology and Related Fields</a
+                >
+                <span class="course-date"
+                  >· HUS, Vietnam National University, Hanoi, Vietnam (29 July–2
+                  August 2024)</span
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sfb-higher-invariants.app.uni-regensburg.de/index.php?title=Page_Interactions_between_algebra_equivariance_and_homotopy_theory_Summer_School"
+                  class="hidden-link"
+                  >Interactions between Algebra, Equivariance, and Homotopy
+                  Theory</a
+                >
+                <span class="course-date"
+                  >· Universität Regensburg (24–28 June 2024)</span
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sfb-higher-invariants.app.uni-regensburg.de/index.php?title=Bavarian_Geometry_and_Topology_Meeting_XII"
+                  class="hidden-link"
+                  >12th Bavarian Geometry &amp; Topology Meeting</a
+                >
+                <span class="course-date"
+                  >· Universität Regensburg, Germany (8–9 April 2024)</span
+                >
+              </li>
+              <li>
+                <a href="https://itp-school-2023.github.io/" class="hidden-link"
+                  >Interactions of Proof Assistants and Mathematics</a
+                >
+                <span class="course-date"
+                  >· Universität Regensburg, Germany (18–29 September
+                  2023)</span
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.math.ku.dk/english/calendar/events/parametrized-homotopy-theory/"
+                  class="hidden-link"
+                  >Parametrized Homotopy Theory</a
+                >
+                <span class="course-date"
+                  >· Københavns Universitet, Denmark (4–8 September 2023)</span
+                >
+              </li>
+              <li>
+                <a
+                  href="https://archiveweb.epfl.ch/ytm2023.epfl.ch/"
+                  class="hidden-link"
+                  >Young Topologists Meeting</a
+                >
+                <span class="course-date"
+                  >· EPFL, Switzerland (24–28 July 2023)</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <h3>Remote Participation</h3>
-        <ul class="conflist">
-          <li>
-            <a
-              href="https://richardblute.ca/octoberfest-2025/"
-              class="hidden-link"
-              ><strong>2025 Category Theory Octoberfest</strong></a
-            >
-            (25–26 October 2025)
-          </li>
-          <li>
-            <a href="https://hott-uf.github.io/2025/" class="hidden-link"
-              ><strong
-                >Workshop on Homotopy Type Theory / Univalent Foundations
-                2025</strong
-              ></a
-            >
-            – Università di Genova, Italy (15–16 April 2025)
-          </li>
-          <li>
-            <strong>Online Workshop on (∞,2)-Categories</strong>
-            (11 October – 15 November 2023) – Organized by Lyne Moser, Martina
-            Rovelli, &amp; Nima Rasekh.
-          </li>
-          <li>
-            <a href="https://younghomseminar.github.io/" class="hidden-link"
-              ><strong>Young Homotopy-Theorist Online Meeting</strong></a
-            >
-            (attended selected sessions, 5 October 2023 – 30 May 2024)
-          </li>
-        </ul>
+        <div class="entry">
+          <div class="entry-description">
+            <ul class="teaching-list">
+              <li>
+                <a
+                  href="https://richardblute.ca/octoberfest-2025/"
+                  class="hidden-link"
+                  >2025 Category Theory Octoberfest</a
+                >
+                <span class="course-date">· (25–26 October 2025)</span>
+              </li>
+              <li>
+                <a href="https://hott-uf.github.io/2025/" class="hidden-link"
+                  >Workshop on Homotopy Type Theory / Univalent Foundations
+                  2025</a
+                >
+                <span class="course-date"
+                  >· Università di Genova, Italy (15–16 April 2025)</span
+                >
+              </li>
+              <li>
+                Online Workshop on (∞,2)-Categories
+                <span class="course-date"
+                  >· (11 October – 15 November 2023) – Organized by Lyne Moser,
+                  Martina Rovelli, &amp; Nima Rasekh</span
+                >
+              </li>
+              <li>
+                <a href="https://younghomseminar.github.io/" class="hidden-link"
+                  >Young Homotopy-Theorist Online Meeting</a
+                >
+                <span class="course-date"
+                  >· attended selected sessions (5 October 2023 – 30 May
+                  2024)</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <h3>Invited, but Unable to Attend</h3>
-        <ul class="conflist">
-          <li>
-            <a
-              href="https://mathmatters.cms.math.ca/en/article/new-2026-cms-summer-meeting-june-5-8-call-for-sessions/"
-              class="hidden-link"
-              ><strong>2026 CMS Summer Meeting</strong></a
-            >
-            – Saint John, New Brunswick (5–8 June 2026)
-          </li>
-        </ul>
+        <div class="entry">
+          <div class="entry-description">
+            <ul class="teaching-list">
+              <li>
+                <a
+                  href="https://mathmatters.cms.math.ca/en/article/new-2026-cms-summer-meeting-june-5-8-call-for-sessions/"
+                  class="hidden-link"
+                  >2026 CMS Summer Meeting</a
+                >
+                <span class="course-date"
+                  >· Saint John, New Brunswick (5–8 June 2026)</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <!-- Other Experience -->
