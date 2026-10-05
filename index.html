@@ -28,6 +28,12 @@
       a:hover {
         text-decoration: underline;
       }
+      a:focus-visible {
+        outline: 2px solid #7b001c;
+        outline-offset: 3px;
+        border-radius: 2px;
+        text-decoration: underline;
+      }
 
       /* ---------- NAVIGATION ---------- */
       header {
@@ -120,6 +126,25 @@
         color: #555;
         margin-right: 0.3rem;
       }
+      .social-links {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 2rem;
+        min-height: 2rem;
+        vertical-align: middle;
+      }
+      .social-link svg {
+        width: 1.3rem;
+        height: 1.3rem;
+        flex-shrink: 0;
+        fill: currentColor;
+      }
 
       .photo-column {
         flex-shrink: 0;
@@ -205,7 +230,8 @@
         color: inherit;
         text-decoration: none;
       }
-      .hidden-link:hover {
+      .hidden-link:hover,
+      .hidden-link:focus-visible {
         text-decoration: underline;
         color: #7b001c;
       }
@@ -230,7 +256,7 @@
         font-weight: bold;
       }
       .course-date {
-        color: #999;
+        color: #707070;
         font-size: 0.85rem;
         margin-left: 0.3rem;
       }
@@ -350,6 +376,18 @@
               <strong>Office:</strong> Room 275C, Middlesex College, University
               of Western Ontario
             </p>
+            <p class="social-links">
+              <a class="social-link" href="https://www.linkedin.com/in/benni-thien-ngo/" aria-label="LinkedIn profile" title="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M20.45 0H3.55C1.59 0 0 1.59 0 3.55v16.9C0 22.41 1.59 24 3.55 24h16.9C22.41 24 24 22.41 24 20.45V3.55C24 1.59 22.41 0 20.45 0ZM7.12 20.45H3.56V9h3.56v11.45ZM5.34 7.44a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28Z" />
+                </svg>
+              </a>
+              <a class="social-link" href="https://github.com/BenniNgo" aria-label="GitHub profile" title="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 .297a12 12 0 0 0-3.793 23.385c.6.111.82-.261.82-.577v-2.234c-3.338.726-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.418-1.305.762-1.605-2.665-.304-5.467-1.333-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 6.006 0c2.291-1.552 3.297-1.23 3.297-1.23.654 1.652.243 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.216.694.825.576A12.001 12.001 0 0 0 12 .297Z" />
+                </svg>
+              </a>
+            </p>
           </div>
         </div>
 
@@ -371,7 +409,7 @@
             University of Western Ontario, London, Ontario, Canada
           </div>
           <div class="entry-description">
-            Expected date of graduation: 31 December 2028.
+            Expected completion: 2028.
           </div>
         </div>
         <div class="entry">
@@ -502,7 +540,26 @@
             </p>
             <ul class="teaching-list">
               <li>
-                CALC 1301: Calculus II
+                MATH 1229: Methods of Matrix Algebra
+                <span class="course-date"
+                  >· fall term 2026, September–December</span
+                >
+              </li>
+              <li>
+                MATH 3020: Introduction to Abstract Algebra
+                <span class="course-date"
+                  >· fall term 2026, September–December</span
+                >
+              </li>
+              <li>
+                MATH 1600: Linear Algebra I
+                <span class="course-date"
+                  >· summer term 2026, May–August; fall term 2025,
+                  September–December; winter term 2025, January–April</span
+                >
+              </li>
+              <li>
+                CALCULUS 1301: Calculus II
                 <span class="course-date"
                   >· winter term 2026, January–April</span
                 >
@@ -511,13 +568,6 @@
                 MATH 2700: Linear Algebra II
                 <span class="course-date"
                   >· winter term 2026, January–April</span
-                >
-              </li>
-              <li>
-                MATH 1600: Linear Algebra I
-                <span class="course-date"
-                  >· winter term 2025, January–April &amp; fall term 2025,
-                  September–December</span
                 >
               </li>
               <li>
@@ -564,7 +614,7 @@
               <li>
                 Introduction to Probability Theory &amp; Statistics
                 <span class="course-date"
-                  >· summer semester 2021 &amp; summer semester 2023,
+                  >· summer semester 2023 &amp; summer semester 2021,
                   April–September</span
                 >
               </li>
@@ -583,7 +633,7 @@
               <li>
                 Numerical Analysis I
                 <span class="course-date"
-                  >· winter semester 2020/2021 &amp; winter semester 2021/2022,
+                  >· winter semester 2021/2022 &amp; winter semester 2020/2021,
                   October–March</span
                 >
               </li>
@@ -834,7 +884,8 @@
                   >2026 CMS Summer Meeting</a
                 >
                 <span class="course-date"
-                  >· Saint John, New Brunswick (5–8 June 2026)</span
+                  >· Saint John, New Brunswick (5–8 June 2026) – invited to speak;
+                  unable to attend</span
                 >
               </li>
             </ul>
@@ -852,13 +903,12 @@
           </div>
           <div class="entry-description">
             <p>
-              As part of a two‑person team, I was the first point of contact for
-              technical issues in the department. My duties included setting up
-              workstations (computers, printers, telephones, and other
-              equipment), troubleshooting server‑related problems (e.g.
-              web‑printing and telephony), training new staff on the
-              university's IT systems, and occasionally reporting to the central
-              university‑wide technical support.
+              In a two-person team, I served as the department's first point of
+              contact for IT issues: setting up computers, printers, telephones,
+              and other equipment; troubleshooting server-related issues,
+              including web printing and telephony; training new staff on
+              university IT systems; and occasionally escalating issues to
+              central university IT support.
             </p>
           </div>
         </div>
@@ -868,7 +918,7 @@
     <footer>
       <p>
         &copy; 2026 Benni Thien Ngo – Last updated on
-        <span id="last-updated">23 May 2026</span>.
+        <time id="last-updated" datetime="2026-10-05">5 October 2026</time>.
       </p>
     </footer>
   </body>
